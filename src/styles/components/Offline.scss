@@ -1,0 +1,27 @@
+.offline {
+  // height: 30px;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 345px;
+  max-width: 85vw;
+  position: relative;
+  margin: 10px 0;
+  padding: 3px 0;
+  background-color: #202020;
+  border: 2px solid #191919;
+
+  &.active {
+    display: flex;
+  }
+
+  &:not(.active) {
+    display: none;
+  }
+
+  span {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+}

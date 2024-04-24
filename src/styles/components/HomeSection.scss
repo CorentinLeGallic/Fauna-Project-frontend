@@ -1,0 +1,51 @@
+.home-section {
+  width: 100%;
+  color: white;
+  padding: 10px;
+
+  .section-title {
+    margin-bottom: 20px;
+    font-family: "Calibri", sans-serif;
+  }
+
+  .section-content {
+    text-align: justify;
+    font-family: "Segoe UI";
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .home-section {
+    .section-title {
+      font-size: 30px;
+    }
+
+    .section-content {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home-section {
+    .section-title {
+      font-size: 28px;
+    }
+
+    .section-content {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .home-section {
+    .section-title {
+      font-size: 25px;
+    }
+
+    .section-content {
+      font-size: 16px;
+    }
+  }
+}

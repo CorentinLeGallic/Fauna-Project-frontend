@@ -1,0 +1,23 @@
+.auth-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .toast-container {
+    position: absolute;
+    // right: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    width: 450px;
+    // height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    // background-color: purple;
+  }
+}

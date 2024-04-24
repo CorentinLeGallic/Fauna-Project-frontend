@@ -1,0 +1,10 @@
+[
+    {
+        "title": "Mode de jeu",
+        "content": "Le bingo est un mini-jeu Minecraft créé par lorgon111 le 3 octobre 2013. Les joueurs doivent, en teams ou en solo, explorer, tuer des mobs, miner et crafter afin de compléter le plus rapidement possible une grille de bingo. Celui qui complète sa grille le plus vite gagne la partie."
+    },
+    {
+        "title": "Gameplay",
+        "content": "Une fois la partie commencée, vous aurez la possibilité de voir l'avancée de votre grille dans l'onglet \"Grille\". Afin de claim un objectif que le plugin ne peut vérifier, appuyez sur la case de l'objectif correspondant : un admin sera ping, et s'occupera de vérifier si vous avez validé ou non cet objectif."
+    } 
+]

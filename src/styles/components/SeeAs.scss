@@ -1,0 +1,20 @@
+.see-as {
+  width: 220px;
+  min-height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Calibri", sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+  border: 2px solid rgb(99, 99, 99);
+  background-color: #333333;
+  user-select: none;
+  //   box-shadow: 1px 1px 1px 1px #353535, -1px -1px 1px 1px #353535;
+
+  &:hover {
+    background-color: #424242;
+  }
+}

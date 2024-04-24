@@ -1,0 +1,34 @@
+.grid-container {
+  height: 85vw;
+  aspect-ratio: 1;
+  display: grid;
+  gap: 5px;
+
+  &:not(.admin) {
+    max-width: 90vw;
+    max-height: 90vw;
+  }
+
+  &.normal {
+    margin: 2% 0;
+
+    .grid-container.admin {
+      max-width: calc(90vw - 300px);
+      max-height: calc(90vw - 300px);
+    }
+  }
+
+  &.short {
+    .grid-container.admin {
+      max-width: 90vw;
+      max-height: 90vw;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .grid-container.admin.normal {
+    max-width: 52.5vw;
+    max-height: 52.5vw;
+  }
+}

@@ -1,0 +1,28 @@
+.save-grid {
+  // border: 2px solid red;
+  color: white;
+  font-family: "Calibri", sans-serif;
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: #2e70b1;
+  border-radius: 2px;
+  // margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.8s;
+  background-position: center;
+  border: none;
+  height: 30px;
+
+  &:hover {
+    background-color: #3680ca;
+    background-image: radial-gradient(circle, transparent 1%, #3680ca 1%);
+    background-position: center;
+    background-size: 15000%;
+  }
+
+  &:active {
+    transition: background 0s;
+    background-color: #94c0ec;
+    background-size: 100%;
+  }
+}

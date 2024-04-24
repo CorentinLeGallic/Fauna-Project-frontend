@@ -1,0 +1,111 @@
+.right-teams-header {
+  height: 100%;
+  padding: 0 10px;
+
+  &.normal {
+    position: relative;
+  }
+
+  button {
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-right: 10px;
+    align-items: center;
+    gap: 10px;
+    padding-top: 2px;
+
+    .dropdown-img {
+      width: 12px;
+      height: 16px;
+
+      img {
+        position: relative;
+        top: 1px;
+        transform: rotate(-90deg);
+        transition: transform 150ms ease-out;
+      }
+
+      img.active {
+        transform: rotate(0);
+      }
+    }
+
+    p {
+      font-family: "Segoe UI", sans-serif;
+      color: #0091ff;
+      font-size: 14px;
+    }
+  }
+
+  .sort-dropdown {
+    z-index: 10;
+    position: absolute;
+    width: 120px;
+    height: max-content;
+    // border-radius: 8px;
+    background-color: #292929;
+    top: calc(100% - 2px);
+    left: 10px;
+    box-shadow: 1px 1px 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+
+    &.active {
+      transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .sort-option {
+      user-select: none;
+      font-size: 14px;
+      padding: 2px 10px;
+      font-family: "Segoe UI", sans-serif;
+      color: rgb(216, 216, 216);
+      width: 100%;
+      // border: 2px solid red;
+
+      // &:nth-child(1) {
+      //   border-top-left-radius: 8px;
+      //   border-top-right-radius: 8px;
+      // }
+
+      // &:nth-child(2) {
+      //   border-bottom-left-radius: 8px;
+      //   border-bottom-right-radius: 8px;
+      // }
+
+      &:hover {
+        background-color: #353535;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 441px) {
+  .right-teams-header.short {
+    position: absolute;
+    right: 30px;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .right-teams-header.short {
+    position: relative;
+  }
+}
